@@ -1,0 +1,284 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+  <title>Portfolio</title> 
+  <!-- Font Awesome --> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> 
+<!-- Google Fonts --> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> 
+<!-- Bootstrap core CSS --> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> 
+<!-- Material Design Bootstrap --> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> 
+ <style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .github-logo{
+    width: 100%;
+    max-width: 25px;
+    height: auto;
+  }
+ </style>
+</head> 
+ 
+<body> 
+ 
+  <!-- Start your project here--> 
+  {% load static %}
+  <ul name="navbar">
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <!-- <li><a href="">My CV</a></li> --> 
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="https://github.com/hybridgreen"> <img src="static/github-logo.png" class ="github-logo"> </a></li>
+  </ul>
+
+<div class="container mt-5"> 
+ 
+ 
+    <!--Section: Content--> 
+    <section class="dark-grey-text text-center"> 
+   
+      <style> 
+        .md-pills .nav-link.active { 
+          background-color: #3f51b5; 
+        } 
+      </style> 
+       
+      <!-- Section heading --> 
+      <h3 class="font-weight-bold mb-4 pb-2">My recent projects</h3> 
+      <!-- Section description --> 
+       
+        <!--First row--> 
+        <div class="row"> 
+           
+          <!--First column--> 
+          <div class="col-12"> 
+             
+          <!--First column--> 
+   
+      </div> 
+      <!--First row--> 
+       
+      <!--Tab panels--> 
+      <div class="tab-content"> 
+   
+        <!--Panel 1--> 
+        <div class="tab-pane fade show in active" id="panel31" role="tabpanel"> 
+   
+          <!--First row--> 
+          <div class="row"> 
+             
+            <!-- This is where we will showcase the projects, Remember to hyperlink to the new app-->
+
+            <!--First column--> 
+            <div class="col-lg-4 col-md-12 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <a href="{% url 'todoapp:todo_home'%}" >
+                <img src="{% static 'todo-img.jpg'%}" class="img-fluid">
+              </a>
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">To-do List</p> 
+            </div> 
+            <!--First column--> 
+             
+            <!--Second column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">{%lorem%}</p> 
+            </div> 
+            <!--Second column--> 
+             
+            <!--Third column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">{%lorem%}</p> 
+            </div> </p> 
+            </div> 
+            <!--Third column--> 
+             
+          </div> 
+          <!--First row--> 
+   
+        </div> 
+        <!--Panel 1--> 
+   
+        <!--Panel 2--> 
+        <div class="tab-pane fade " id="panel32" role="tabpanel"> 
+   
+          <!--First row--> 
+          <div class="row"> 
+             
+            <!--First column--> 
+            <div class="col-lg-4 col-md-12 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--First column--> 
+             
+            <!--Second column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project5.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Second column--> 
+             
+            <!--Third column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Third column--> 
+             
+          </div> 
+          <!--First row--> 
+   
+        </div> 
+        <!--Panel 2--> 
+   
+        <!--Panel 3--> 
+        <div class="tab-pane fade" id="panel33" role="tabpanel"> 
+   
+          <!--First row--> 
+          <div class="row"> 
+             
+            <!--First column--> 
+            <div class="col-lg-4 col-md-12 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project3.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--First column--> 
+             
+            <!--Second column--> 
+            <div class="col-lg-4 col-md-6"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project6.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Second column--> 
+             
+            <!--Third column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Third column--> 
+   
+          </div> 
+          <!--First row--> 
+   
+        </div> 
+        <!--Panel 3--> 
+   
+        <!--Panel 4--> 
+        <div class="tab-pane fade" id="panel34" role="tabpanel"> 
+   
+          <!--First row--> 
+          <div class="row"> 
+             
+            <!--First column--> 
+            <div class="col-lg-4 col-md-12 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--First column--> 
+             
+            <!--Second column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project7.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Second column--> 
+             
+            <!--Third column--> 
+            <div class="col-lg-4 col-md-6 mb-4"> 
+              <!--Featured image--> 
+              <div class="view overlay zoom z-depth-2"> 
+                <img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid"> 
+              </div> 
+              <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit 
+                amet</p> 
+            </div> 
+            <!--Third column--> 
+             
+          </div> 
+          <!--First row--> 
+   
+        </div> 
+        <!--Panel 4--> 
+   
+      </div> 
+      <!--Tab panels--> 
+   
+      </section> 
+     
+     
+  </div> 
+</body>

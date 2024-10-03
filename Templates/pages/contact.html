@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+  <title>Portfolio</title> 
+  <!-- Font Awesome --> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> 
+<!-- Google Fonts --> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"> 
+<!-- Bootstrap core CSS --> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> 
+<!-- Material Design Bootstrap --> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> 
+ <style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .github-logo{
+    width: 100%;
+    max-width: 25px;
+    height: auto;
+  }
+
+ </style>
+
+</head> 
+ 
+  <!-- Start your project here--> 
+  <body>
+    <ul name="navbar">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <!-- <li><a href="">My CV</a></li> --> 
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://github.com/hybridgreen"> <img src="static/github-logo.png" class ="github-logo"> </a></li>
+    </ul>
+  
+<div class="container z-depth-1 my-5 px-0"> 
+ 
+    <!--Section: Content--> 
+    <section class="p-5 my-md-5 text-center"  
+      style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg); background-size: cover; background-position: center center;"> 
+   
+      <!-- Section heading --> 
+      <h3 class="text-center font-weight-bold text-white mt-5 mb-3">Contact Us</h3> 
+      <!-- Section description --> 
+      <h4 class="text-center font-weight-normal text-white mx-auto mb-4 pb-2">{{message}}</h4> 
+   
+      <form class="mb-5 mx-md-5" action="contact/submit" method="post"> 
+        {% csrf_token %}
+        {{form}}     
+            <div class="text-center"> 
+              <button type="submit" class="btn btn-elegant">Submit</button> 
+            </div> 
+   
+          </div> 
+        </div> 
+   
+      </form> 
+   
+    </section> 
+    <!--Section: Content--> 
+      
+    </div> 
+  </body>
