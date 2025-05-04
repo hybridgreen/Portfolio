@@ -7,15 +7,22 @@ from django.core.mail import send_mail
 # Create your views here.
 
 def home(request):
-    return render(request, "pages/index.html", {})
+    context = {
+    "ptitle": "|Home",
+        }
+    return render(request, "pages/index.html", context )
 
 def projects(request):
-    return render(request, "pages/projects.html", {})
+    context = {
+        "ptitle": "|My Projects",
+        }
+    return render(request, "pages/projects.html", context)
 
 def contact(request):
     context = {
         "form":Contact_form,
         "message" : "I'd love to hear from you!",
+        "ptitle": "|Contact Us!"
     }
     return render(request, "pages/contact.html", context)
 

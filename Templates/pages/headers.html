@@ -5,7 +5,7 @@
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta http-equiv="x-ua-compatible" content="ie=edge"> 
-  <title>Portfolio</title> 
+  <title>Portfolio {{ ptitle }}</title> 
   <!-- Font Awesome --> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> 
 <!-- Google Fonts --> 
@@ -52,12 +52,13 @@ ul {
   <!-- Start your project here--> 
   <body>
     <ul name="navbar">
-        <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="https://github.com/hybridgreen"> <img src="static/github-logo.png" class ="github-logo"> </a></li>
-    </ul>
-    {% block content%} 
+      <li><a href="{% url 'pages:home'%}">Home</a></li>
+      <li><a href="{% url 'pages:projects'%}">Projects</a></li>
+      <!-- <li><a href="">My CV</a></li> --> 
+      <li><a href="{% url 'pages:contact' %}">Contact</a></li>
+      <li><a href="https://github.com/hybridgreen"> <img src=" {%url static 'github-logo.png'} class ="github-logo"> </a></li>
+  </ul>
+    {% block content %} 
 
     {% endblock %}
 
